@@ -17,10 +17,10 @@ impl ThermodynamicParticle {
     pub fn entropy_density(&self, temperature: f64) -> f64 {
         crate::thermal_functions::entropy_density(temperature, self.m, self.g, self.spin2)
     }
-    pub fn g_eff(&self, temperature: f64) -> f64 {
-        crate::thermal_functions::g_eff(temperature, self.m, self.g, self.spin2)
+    pub fn geff(&self, temperature: f64) -> f64 {
+        crate::thermal_functions::geff(temperature, self.m, self.g, self.spin2)
     }
-    pub fn h_eff(&self, temperature: f64) -> f64 {
-        crate::thermal_functions::g_eff(temperature, self.m, self.g, self.spin2)
+    pub fn heff(&self, temperature: f64) -> f64 {
+        crate::thermal_functions::geff(temperature, self.m, self.g, self.spin2)
     }
 }

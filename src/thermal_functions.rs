@@ -63,14 +63,14 @@ pub fn entropy_density(temperature: f64, mass: f64, g: f64, spin2: usize) -> f64
 /// Compute the equilibrium number of degrees of freedom stored in energy of a
 /// particle with a given `temperature`, `mass`, internal degrees of freedom
 /// `g` and spin `spin2/2`.
-pub fn g_eff(temperature: f64, mass: f64, g: f64, spin2: usize) -> f64 {
+pub fn geff(temperature: f64, mass: f64, g: f64, spin2: usize) -> f64 {
     30.0 / (PI * PI) * g * energy_density_scaled(mass / temperature, spin2)
 }
 
 /// Compute the equilibrium number of degrees of freedom stored in entropy of a
 /// particle with a given `temperature`, `mass`, internal degrees of freedom
 /// `g` and spin `spin2/2`.
-pub fn h_eff(temperature: f64, mass: f64, g: f64, spin2: usize) -> f64 {
+pub fn heff(temperature: f64, mass: f64, g: f64, spin2: usize) -> f64 {
     45.0 / (2.0 * PI * PI) * g * entropy_density_scaled(mass / temperature, spin2)
 }
 
