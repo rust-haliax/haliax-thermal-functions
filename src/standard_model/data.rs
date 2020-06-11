@@ -1,18 +1,6 @@
 use lazy_static::lazy_static;
 use ndarray::prelude::*;
 
-pub(super) const SM_LOG_TEMP_MIN: f64 = -4.5;
-pub(super) const SM_LOG_TEMP_MAX: f64 = 4.0;
-
-pub(super) const SM_GSTAR_FRONT: f64 = 2.141289997868463;
-pub(super) const SM_GSTAR_BACK: f64 = 10.3359;
-
-pub(super) const SM_GEFF_FRONT: f64 = 3.3839699989395835;
-pub(super) const SM_GEFF_BACK: f64 = 106.83;
-
-pub(super) const SM_HEFF_FRONT: f64 = 3.9387999991430975;
-pub(super) const SM_HEFF_BACK: f64 = 106.83;
-
 lazy_static! {
     pub(super) static ref LOG_TEMP_DATA: Array1<f64> = Array::linspace(-4.5, 4.0, 341);
     pub(super) static ref GSTAR_DATA: Array1<f64> = array![
