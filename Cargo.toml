@@ -8,6 +8,6 @@ edition = "2018"
 
 [dependencies]
 lazy_static = "1.4.0"
-cyphus-integration = { git = "https://github.com/rust-cyphus/cyphus-integration.git" }
+cyphus-integration = { path = "../cyphus-integration" }
 cyphus-interpolation = { path = "../cyphus-interpolation" }
 ndarray = "0.13.1"
