@@ -1,4 +1,4 @@
-use cyphus_integration::GaussKronrodIntegrator;
+use cyphus_integration::prelude::*;
 use lazy_static::lazy_static;
 use std::f64::consts::PI;
 
