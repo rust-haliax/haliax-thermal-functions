@@ -4,13 +4,11 @@ use lazy_static::lazy_static;
 use std::f64::consts::PI;
 
 lazy_static! {
-    static ref GK: GaussKronrodIntegrator = GaussKronrodIntegrator {
-        epsabs: 0.0,
-        epsrel: 1e-8,
-        key: 2,
-        singular_points: vec![],
-        limit: 100
-    };
+    static ref GK: GaussKronrodIntegrator<f64> = GaussKronrodIntegratorBuilder::default()
+        .epsabs(0.0)
+        .epsrel(1e-3)
+        .order(7)
+        .build();
 }
 
 fn neq_scaled(x: f64, spin2: usize) -> f64 {
