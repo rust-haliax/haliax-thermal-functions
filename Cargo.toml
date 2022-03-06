@@ -8,7 +8,7 @@ edition = "2018"
 
 [dependencies]
 lazy_static = "1.4.0"
-cyphus-integration = { path = "../cyphus-integration" }
-cyphus-interpolation = { path = "../cyphus-interpolation" }
-cyphus-specfun = { path = "../cyphus-specfun" }
+cyphus-integration = { git = "https://github.com/rust-cyphus/cyphus-integration.git" }
+cyphus-diffeq = { git = "https://github.com/rust-cyphus/cyphus-diffeq.git" }
+cyphus-specfun = { git = "https://github.com/rust-cyphus/cyphus-specfun.git" }
 ndarray = "0.13.1"
